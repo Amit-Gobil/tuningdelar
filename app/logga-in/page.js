@@ -30,13 +30,13 @@ export default async function LoginPage({ searchParams }) {
         <div>
           <h1 style={{ fontSize: 28, marginBottom: 10 }}>Verifiera dig med BankID</h1>
           <p style={{ fontSize: 16, lineHeight: 1.6, color: 'var(--soft)', margin: 0 }}>
-            Alla bud är bindande. Därför måste varje budgivare identifiera sig, så att säljaren vet att budet kommer från en riktig person.
+            Alla bud och köp är bindande. Därför identifierar sig alla med BankID, så att du vet att du gör affärer med en riktig person.
           </p>
         </div>
         <ol style={{ margin: 0, paddingLeft: 20, color: 'var(--text-2)', fontSize: 14, lineHeight: 1.8 }}>
           <li>Du loggar in med BankID</li>
-          <li>Ditt namn visas aldrig för andra budgivare</li>
-          <li>Vinner du kontaktar säljaren dig för betalning och överlämning</li>
+          <li>Andra ser bara ditt förnamn, aldrig ditt personnummer</li>
+          <li>Köpare och säljare sköter betalning och överlämning via meddelanden</li>
         </ol>
         {err && <div className="alert err">{err}</div>}
         {ready ? (
