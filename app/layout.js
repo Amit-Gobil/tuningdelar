@@ -6,7 +6,7 @@ import { unreadCount } from '@/lib/messaging';
 
 export const metadata = {
   title: { default: SITE_NAME, template: `%s · ${SITE_NAME}` },
-  description: 'Köp och sälj trimdelar och byggda bilar. Auktion eller köp direkt, alla verifierade med BankID.'
+  description: 'Köp och sälj trimdelar och bilar. Auktion eller köp direkt, alla verifierade med BankID.'
 };
 
 export const viewport = { themeColor: '#ffffff', width: 'device-width', initialScale: 1 };
@@ -35,7 +35,7 @@ export default async function RootLayout({ children }) {
               <nav className="nav" aria-label="Huvudmeny">
                 <Link href="/">Annonser</Link>
                 <Link href="/?typ=auktion">Auktioner</Link>
-                <Link href="/?kat=byggda-bilar">Byggda bilar</Link>
+                <Link href="/?kat=bilar">Bilar</Link>
               </nav>
             </div>
             {user ? (

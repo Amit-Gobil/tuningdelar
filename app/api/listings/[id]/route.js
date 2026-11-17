@@ -93,7 +93,7 @@ export async function PATCH(req, { params }) {
     if (hasBids && s === 'draft') return bad('En annons med bud kan inte göras till utkast.', 409);
     if (s === 'published') {
       const missing = [];
-      const isCar = merged.category === 'byggda-bilar';
+      const isCar = merged.category === 'bilar';
       if (!merged.headline && !(merged.make && merged.model)) missing.push(isCar ? 'märke och modell' : 'rubrik');
       if (!merged.description) missing.push('beskrivning');
       if (merged.sale_type !== 'fixed') {

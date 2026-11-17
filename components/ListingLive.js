@@ -38,7 +38,7 @@ export default function ListingLive({ listingId, initial, loggedIn, bidderName, 
 
   const a = state.auction;
   const isAuction = a.sale_type !== 'fixed';
-  const isCar = a.category === 'byggda-bilar';
+  const isCar = a.category === 'bilar';
   const endsMs = a.ends_at ? new Date(a.ends_at).getTime() : 0;
   const startsMs = a.starts_at ? new Date(a.starts_at).getTime() : 0;
   const phase = a.status === 'sold' ? 'sold'

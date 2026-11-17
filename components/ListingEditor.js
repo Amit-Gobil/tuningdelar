@@ -60,7 +60,7 @@ export default function ListingEditor({ initial, initialImages, backHref = '/kon
   const fileRef = useRef(null);
   const hasBids = a.bid_count > 0;
   const sold = a.status === 'sold';
-  const isCar = form.category === 'byggda-bilar';
+  const isCar = form.category === 'bilar';
   const isAuction = form.sale_type !== 'fixed';
   const hasBuyNow = form.sale_type !== 'auction';
 

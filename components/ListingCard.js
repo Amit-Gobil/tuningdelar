@@ -16,7 +16,7 @@ export default function ListingCard({ a, now = Date.now(), href }) {
       </div>
       <div className="body">
         <h3 style={{ fontSize: 17, fontWeight: 600, lineHeight: 1.3 }}>
-          {listingTitle(a)}{a.category === 'byggda-bilar' && a.year ? ` · ${a.year}` : ''}
+          {listingTitle(a)}{a.category === 'bilar' && a.year ? ` · ${a.year}` : ''}
         </h3>
         {a.fits && <div className="muted" style={{ fontSize: 13 }}>Passar {a.fits}</div>}
         <div className="row" style={{ justifyContent: 'space-between', marginTop: 6, alignItems: 'flex-end' }}>
